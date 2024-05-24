@@ -9,6 +9,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
 
 @Entity
 @Table(name = "livros")
@@ -16,36 +18,29 @@ public class Livro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @NotBlank
-    private Long isbn;
+    @NotNull
+    private String isbn;
     @NotBlank
     private String titulo;
     @NotBlank
     private String sinopse;
     private String autor;
+    @Positive
     private double preco;
     private boolean emEstoque;
     
     // Construtores
+    public Livro() {
+    }
 
-    public Livro(long id, @NotBlank
-            String titulo, @NotBlank
-                    String sinopse, String autor, boolean emEstoque, int preco) {
-        this.id = id;
+    public Livro(String isbn, @NotBlank String titulo, @NotBlank String sinopse, String autor, double preco, boolean emEstoque) {
+        this.isbn = isbn;
         this.titulo = titulo;
         this.sinopse = sinopse;
         this.autor = autor;
         this.preco = preco;
         this.emEstoque = emEstoque;
-      }
-
-    public Livro(String titulo, String sinopse, String autor, double preco, boolean emEstoque) {
-        this.titulo = titulo;
-        this.sinopse = sinopse;
-        this.autor = autor;
-        this.preco = preco;
-        this.emEstoque = emEstoque;
-      }
+    }
 
     // Getters e Setters
 
@@ -57,11 +52,11 @@ public class Livro {
         this.id = id;
     }
     
-    public Long getIsbn() {
+    public String getIsbn() {
         return isbn;
     }
 
-    public void setIsbn(Long isbn) {
+    public void setIsbn(String isbn) {
         this.isbn = isbn;
     }
     public String getTitulo() {

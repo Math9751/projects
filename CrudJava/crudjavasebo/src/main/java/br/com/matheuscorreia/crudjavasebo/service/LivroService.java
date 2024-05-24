@@ -1,9 +1,12 @@
 package br.com.matheuscorreia.crudjavasebo.service;
 
 import java.util.List;
+
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import br.com.matheuscorreia.crudjavasebo.exception.BadRequestException;
 import br.com.matheuscorreia.crudjavasebo.model.Livro;
 import br.com.matheuscorreia.crudjavasebo.repository.LivroRepository;
@@ -17,33 +20,32 @@ public class LivroService {
         this.livroRepository = livroRepository;
     }
 
-    //Operações CRUD para cadastro, busca, alteração e exclusão de livros
-    public List<Livro> create(Livro livro) {
-        livroRepository.save(livro);
-        return list();
+    @Transactional
+    public Livro create(Livro livro) {
+        return livroRepository.save(livro);
     }
 
     public List<Livro> list() {
-        Sort sort = Sort.by(Direction.DESC, "isbn").and(
-            Sort.by(Direction.ASC,"titulo").ascending()
-        );
+        Sort sort = Sort.by(Direction.DESC, "isbn")
+                .and(Sort.by(Direction.ASC, "titulo"));
         return livroRepository.findAll(sort);
     }
 
-    public List<Livro> update(Long id, Livro livro) {
-        livroRepository.findById(id).ifPresentOrElse((existingLivro) -> {
+    @Transactional
+    public Livro update(Long id, Livro livro) {
+        return livroRepository.findById(id).map(existingLivro -> {
             livro.setId(id);
-            livroRepository.save(livro);
-        }, () -> {
-            throw new BadRequestException("Livro %d não existe!".formatted(id));
-        });
-        return list();
+            return livroRepository.save(livro);
+        }).orElseThrow(() -> new BadRequestException("Livro %d não existe!".formatted(id)));
     }
 
+    @Transactional
     public List<Livro> delete(Long id) {
-        livroRepository.findById(id).ifPresentOrElse((existingLivro) -> livroRepository.delete(existingLivro), () -> {
-          throw new BadRequestException("Livro %d não existe! ".formatted(id));
+        livroRepository.findById(id).ifPresentOrElse(existingLivro -> {
+            livroRepository.delete(existingLivro);
+        }, () -> {
+            throw new BadRequestException("Livro %d não existe! ".formatted(id));
         });
-        return list();
-      }
+        return null;
     }
+}
