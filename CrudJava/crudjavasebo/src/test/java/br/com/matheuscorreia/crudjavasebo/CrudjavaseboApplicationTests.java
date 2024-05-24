@@ -2,11 +2,15 @@ package br.com.matheuscorreia.crudjavasebo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.reactive.AutoConfigureWebTestClient;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
+import org.springframework.http.MediaType;
 import org.springframework.test.web.reactive.server.WebTestClient;
+
 import br.com.matheuscorreia.crudjavasebo.model.Livro;
 
+@AutoConfigureWebTestClient
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT)
 class CrudjavaseboApplicationTests {
 
@@ -20,6 +24,7 @@ class CrudjavaseboApplicationTests {
         webTestClient
                 .post()
                 .uri("/api/livros/")
+                .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(livro)
                 .exchange()
                 .expectStatus().isCreated()
@@ -50,6 +55,7 @@ class CrudjavaseboApplicationTests {
         Livro createdLivro = webTestClient
                 .post()
                 .uri("/api/livros/")
+                .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(livro)
                 .exchange()
                 .expectStatus().isCreated()
@@ -63,6 +69,7 @@ class CrudjavaseboApplicationTests {
         webTestClient
                 .put()
                 .uri("/api/livros/" + createdLivro.getId())
+                .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(createdLivro)
                 .exchange()
                 .expectStatus().isOk()
@@ -89,6 +96,7 @@ class CrudjavaseboApplicationTests {
         Livro createdLivro = webTestClient
                 .post()
                 .uri("/api/livros/")
+                .contentType(MediaType.APPLICATION_JSON)
                 .bodyValue(livro)
                 .exchange()
                 .expectStatus().isCreated()
