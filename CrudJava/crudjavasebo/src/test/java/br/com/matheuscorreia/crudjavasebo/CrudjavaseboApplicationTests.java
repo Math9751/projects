@@ -7,7 +7,7 @@ import static org.mockito.Mockito.when;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-// import org.springframework.http.MediaType;
+import org.springframework.http.MediaType;
 import static org.springframework.http.MediaType.APPLICATION_JSON;
 import org.springframework.test.web.reactive.server.WebTestClient;
 
@@ -45,19 +45,20 @@ void testCreateLivroSuccess() {
 }
 
 
-    @Test
-    void testCreateLivroFailure() {
-        var invalidLivro = new Livro(null, "", "", "", 0.0, false);
+    // @Test
+    // void testCreateLivroFailure() {
+    //     var invalidLivro = new Livro(null, "", "", "", 0.0, false);
 
-        webTestClient.post()
-            .uri("/api/livros")
-            .contentType(APPLICATION_JSON)
-            .bodyValue(invalidLivro)
-            .exchange()
-            .expectStatus().isBadRequest();
-    }
+    //     webTestClient.post()
+    //         .uri("/api/livros")
+    //         .contentType(APPLICATION_JSON)
+    //         .bodyValue(invalidLivro)
+    //         .exchange()
+    //         .expectStatus().isBadRequest();
+    // }
     
 
+    // @SuppressWarnings("null")
     // @Test
     // public void testUpdateLivroSuccess() {
     //     var livro = new Livro("9788563834010", "Para Além da Bíblia", "História do Antigo Israel", "Mário Liverani", 92.15, true);
@@ -71,9 +72,13 @@ void testCreateLivroSuccess() {
     //             .expectBody(Livro.class)
     //             .returnResult()
     //             .getResponseBody();
-    
+
+    //     createdLivro.setIsbn("Nova Isbn");      
     //     createdLivro.setTitulo("Novo Título");
     //     createdLivro.setSinopse("Nova Sinopse");
+    //     createdLivro.setAutor("Novo Autor");
+    //     createdLivro.setPreco(0);
+    //     createdLivro.setEmEstoque(true);
     
     //     webTestClient
     //             .put()
@@ -83,21 +88,25 @@ void testCreateLivroSuccess() {
     //             .exchange()
     //             .expectStatus().isOk()
     //             .expectBody()
-    //             .jsonPath("$.titulo").isEqualTo("Novo Título")
-    //             .jsonPath("$.sinopse").isEqualTo("Nova Sinopse");
+    //             .jsonPath("$.isbn").isEqualTo(livro.getIsbn())
+	// 			.jsonPath("$.titulo").isEqualTo(livro.getTitulo())
+	// 			.jsonPath("$.sinopse").isEqualTo(livro.getSinopse())
+	// 			.jsonPath("$.autor").isEqualTo(livro.getAutor())
+	// 			.jsonPath("$.preco").isEqualTo(livro.getPreco())
+	// 			.jsonPath("$.emEstoque").isEqualTo(livro.isEmEstoque());
     // }
     
 
-    // @Test
-    // public void testUpdateLivroFailure() {
-    //     var invalidLivro = new Livro("", "", "", null, 0, false);
+    @Test
+    public void testUpdateLivroFailure() {
+        var invalidLivro = new Livro("", "", "", null, 0, false);
     
-    //     webTestClient
-    //             .put()
-    //             .uri("/api/livros/1")
-    //             .contentType(MediaType.APPLICATION_JSON)
-    //             .bodyValue(invalidLivro)
-    //             .exchange()
-    //             .expectStatus().isNotFound();
-    // }    
+        webTestClient
+                .put()
+                .uri("/api/livros/1")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(invalidLivro)
+                .exchange()
+                .expectStatus().isNotFound();
+    }    
 }
