@@ -1,8 +1,6 @@
 package br.com.matheuscorreia.crudjavasebo.controller;
 
 // import java.util.List;
-
-
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -10,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -35,18 +34,20 @@ public class LivroController {
         this.livroService = livroService;
     }
 
-    @PostMapping
+    @PostMapping("/api/livros/cadastro")
 public ResponseEntity<Object> createLivro(@Valid @RequestBody Livro livro) {
     log.debug("Request to create Livro: {}", livro);
     Livro createdLivro = livroService.create(livro);
-    if (createdLivro != null) {
+    if (createdLivro.getId() != null) {
         log.info("Livro criado com sucesso: {}", createdLivro);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdLivro);
     } else {
         log.warn("Falha ao criar livro");
-        return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Falha ao criar livro");
     }
 }
+
+
 
 @GetMapping("/{id}")
 public ResponseEntity<Livro> getLivroById(@PathVariable Long id) {
@@ -59,7 +60,7 @@ public ResponseEntity<Livro> getLivroById(@PathVariable Long id) {
 }
 
 
-    @PutMapping("/{id}")
+    @PutMapping("/apli/livros/editar/{id}")
     public ResponseEntity<Livro> updateLivro(@PathVariable Long id, @RequestBody Livro livro) {
         try {
             return livroService.findById(id)
@@ -80,11 +81,15 @@ public ResponseEntity<Livro> getLivroById(@PathVariable Long id) {
         }
     }
     
+    @DeleteMapping("/api/livros/excluir{id}")
+public ResponseEntity<Void> deleteLivro(@PathVariable Long id) {
+    if (livroService.findById(id).isPresent()) {
+        livroService.deleteById(id);
+        return ResponseEntity.noContent().build();
+    } else {
+        return ResponseEntity.notFound().build();
+    }
+}
 
-
-    // @DeleteMapping("/{id}")
-    // public List<Livro> delete(@PathVariable("id") Long id) {
-    //     return livroService.delete(id);
-    // }
 
 }

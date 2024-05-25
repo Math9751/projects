@@ -1,17 +1,14 @@
 package br.com.matheuscorreia.crudjavasebo.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.Optional;
-
 import br.com.matheuscorreia.crudjavasebo.exception.LivroNotFoundException;
-
-
 import br.com.matheuscorreia.crudjavasebo.model.Livro;
 import br.com.matheuscorreia.crudjavasebo.repository.LivroRepository;
 
@@ -59,5 +56,9 @@ public class LivroService {
     
     public Livro save(Livro livro) {
         return livroRepository.save(livro);
+    }
+
+    public void deleteById(Long id) {
+        livroRepository.deleteById(id);
     }
 }
