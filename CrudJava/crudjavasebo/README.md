@@ -27,7 +27,7 @@ API para organizar livros (CRUD) que faz parte de um desafio para pessoas desenv
 - Clonar repositório git
 - Construir o projeto:
 ```
-$ ./mvnw clean package
+$ ./mvn clean package
 ```'
 - Executar a aplicação:
 ```
