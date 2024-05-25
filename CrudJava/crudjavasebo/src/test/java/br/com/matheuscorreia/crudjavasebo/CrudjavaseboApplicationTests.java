@@ -1,8 +1,11 @@
 package br.com.matheuscorreia.crudjavasebo;
 
 // import java.util.List;
+import java.util.Optional;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.reactive.WebFluxTest;
@@ -23,83 +26,90 @@ public class CrudjavaseboApplicationTests {
     @MockBean
     private LivroService livroService;
 
+    @BeforeEach
     @Test
 void testCreateLivroSuccess() {
-    Livro livro = new Livro("1234567890123L", "Titulo Teste", "Sinopse Teste", "Autor Teste", 19.99, true);
+    Livro livro = new Livro();
+    livro.setIsbn("9788563834010");
+    livro.setTitulo("Para Alem da Biblia");
+    livro.setSinopse("Historia do Antigo Israel");
+    livro.setAutor("Mario Liverani");
+    livro.setPreco(92.15);
+    livro.setEmEstoque(true);
 
-    when(livroService.create(livro)).thenReturn(livro);
+    when(livroService.create(any(Livro.class))).thenReturn(livro);
 
     webTestClient.post()
         .uri("/api/livros")
-        .contentType(APPLICATION_JSON)
+        .contentType(MediaType.APPLICATION_JSON)
         .bodyValue(livro)
         .exchange()
         .expectStatus().isCreated()
         .expectBody()
-        .jsonPath("$.isbn").isEqualTo("1234567890123L")
-        .jsonPath("$.titulo").isEqualTo("Titulo Teste")
-        .jsonPath("$.sinopse").isEqualTo("Sinopse Teste")
-        .jsonPath("$.autor").isEqualTo("Autor Teste")
-        .jsonPath("$.preco").isEqualTo(19.99)
+        .jsonPath("$.isbn").isEqualTo("9788563834010")
+        .jsonPath("$.titulo").isEqualTo("Para Alem da Biblia")
+        .jsonPath("$.sinopse").isEqualTo("Historia do Antigo Israel")
+        .jsonPath("$.autor").isEqualTo("Mario Liverani")
+        .jsonPath("$.preco").isEqualTo(92.15)
         .jsonPath("$.emEstoque").isEqualTo(true);
 }
 
+    @Test
+    void testCreateLivroFailure() {
+        var invalidLivro = new Livro(null, "", "", "", 0.0, false);
 
-    // @Test
-    // void testCreateLivroFailure() {
-    //     var invalidLivro = new Livro(null, "", "", "", 0.0, false);
+        webTestClient.post()
+            .uri("/api/livros")
+            .contentType(APPLICATION_JSON)
+            .bodyValue(invalidLivro)
+            .exchange()
+            .expectStatus().isBadRequest();
+    }
 
-    //     webTestClient.post()
-    //         .uri("/api/livros")
-    //         .contentType(APPLICATION_JSON)
-    //         .bodyValue(invalidLivro)
-    //         .exchange()
-    //         .expectStatus().isBadRequest();
-    // }
-    
+    @Test
+public void testBuscarLivroPorId() {
+    Livro livro = new Livro();
+    livro.setId(1L);
+    livro.setIsbn("9788563834010");
+    livro.setTitulo("Para Alem da Biblia");
+    livro.setSinopse("Historia do Antigo Israel");
+    livro.setAutor("Mario Liverani");
+    livro.setPreco(92.15);
+    livro.setEmEstoque(true);
 
-    // @SuppressWarnings("null")
-    // @Test
-    // public void testUpdateLivroSuccess() {
-    //     var livro = new Livro("9788563834010", "Para Além da Bíblia", "História do Antigo Israel", "Mário Liverani", 92.15, true);
-    //     Livro createdLivro = webTestClient
-    //             .post()
-    //             .uri("/api/livros")
-    //             .contentType(MediaType.APPLICATION_JSON)
-    //             .bodyValue(livro)
-    //             .exchange()
-    //             .expectStatus().isCreated()
-    //             .expectBody(Livro.class)
-    //             .returnResult()
-    //             .getResponseBody();
+    when(livroService.findById(1L)).thenReturn(Optional.of(livro));
 
-    //     createdLivro.setIsbn("Nova Isbn");      
-    //     createdLivro.setTitulo("Novo Título");
-    //     createdLivro.setSinopse("Nova Sinopse");
-    //     createdLivro.setAutor("Novo Autor");
-    //     createdLivro.setPreco(0);
-    //     createdLivro.setEmEstoque(true);
-    
-    //     webTestClient
-    //             .put()
-    //             .uri("/api/livros/" + createdLivro.getId())
-    //             .contentType(MediaType.APPLICATION_JSON)
-    //             .bodyValue(createdLivro)
-    //             .exchange()
-    //             .expectStatus().isOk()
-    //             .expectBody()
-    //             .jsonPath("$.isbn").isEqualTo(livro.getIsbn())
-	// 			.jsonPath("$.titulo").isEqualTo(livro.getTitulo())
-	// 			.jsonPath("$.sinopse").isEqualTo(livro.getSinopse())
-	// 			.jsonPath("$.autor").isEqualTo(livro.getAutor())
-	// 			.jsonPath("$.preco").isEqualTo(livro.getPreco())
-	// 			.jsonPath("$.emEstoque").isEqualTo(livro.isEmEstoque());
-    // }
-    
+    webTestClient.get().uri("/api/livros/{id}", 1L)
+        .exchange()
+        .expectStatus().isOk()
+        .expectBody()
+        .jsonPath("$.titulo").isEqualTo("Para Alem da Biblia")
+        .jsonPath("$.isbn").isEqualTo("9788563834010");
+}
+
+
+//     @Test
+// public void testUpdateLivroSuccess() throws Exception {
+//     Livro livro = new Livro();
+//     livro.setIsbn("9788563834010");
+//     livro.setTitulo("c");
+//     livro.setSinopse("Historia do Antigo Israel");
+//     livro.setAutor("Mario Liverani");
+//     livro.setPreco(92.15);
+//     livro.setEmEstoque(true);
+
+//     webTestClient.post().uri("/api/livros")
+//         .contentType(MediaType.APPLICATION_JSON)
+//         .body(BodyInserters.fromValue(livro))
+//         .exchange()
+//         .expectStatus().isCreated()
+//         .expectBody()
+//         .jsonPath("$.id").isNotEmpty();
+// }
 
     @Test
     public void testUpdateLivroFailure() {
-        var invalidLivro = new Livro("", "", "", null, 0, false);
+        var invalidLivro = new Livro("", "", "", null, 0.0, false);
     
         webTestClient
                 .put()
@@ -109,4 +119,7 @@ void testCreateLivroSuccess() {
                 .exchange()
                 .expectStatus().isNotFound();
     }    
+
+    
+
 }

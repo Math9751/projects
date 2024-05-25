@@ -10,7 +10,9 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.Positive;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "livros")
@@ -18,22 +20,36 @@ public class Livro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @NotNull
+    @JsonProperty("isbn")
     private String isbn;
+
     @NotBlank
+    @Size(min = 2, max = 255)
+    @JsonProperty("titulo")
     private String titulo;
+
     @NotBlank
+    @Size(max = 500)
+    @JsonProperty("sinopse")
     private String sinopse;
+
+    @JsonProperty("autor")
     private String autor;
+
     @Positive
-    private double preco;
-    private boolean emEstoque;
+    @JsonProperty("preco")
+    private Double preco;
+
+    @JsonProperty("emEstoque")
+    private Boolean emEstoque;
     
     // Construtores
     public Livro() {
     }
 
-    public Livro(String isbn, @NotBlank String titulo, @NotBlank String sinopse, String autor, double preco, boolean emEstoque) {
+    public Livro(String isbn, @NotBlank String titulo, @NotBlank String sinopse, String autor, Double preco, boolean emEstoque) {
         this.isbn = isbn;
         this.titulo = titulo;
         this.sinopse = sinopse;

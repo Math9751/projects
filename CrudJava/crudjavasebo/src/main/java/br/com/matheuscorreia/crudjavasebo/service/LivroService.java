@@ -7,7 +7,11 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.matheuscorreia.crudjavasebo.exception.BadRequestException;
+import java.util.Optional;
+
+import br.com.matheuscorreia.crudjavasebo.exception.LivroNotFoundException;
+
+
 import br.com.matheuscorreia.crudjavasebo.model.Livro;
 import br.com.matheuscorreia.crudjavasebo.repository.LivroRepository;
 
@@ -36,7 +40,7 @@ public class LivroService {
         return livroRepository.findById(id).map(existingLivro -> {
             livro.setId(id);
             return livroRepository.save(livro);
-        }).orElseThrow(() -> new BadRequestException("Livro %d não existe!".formatted(id)));
+        }).orElseThrow(() -> new LivroNotFoundException("Livro %d não existe!".formatted(id)));
     }
 
     @Transactional
@@ -44,8 +48,16 @@ public class LivroService {
         livroRepository.findById(id).ifPresentOrElse(existingLivro -> {
             livroRepository.delete(existingLivro);
         }, () -> {
-            throw new BadRequestException("Livro %d não existe! ".formatted(id));
+            throw new LivroNotFoundException("Livro %d não existe! ".formatted(id));
         });
         return null;
+    }
+
+    public Optional<Livro> findById(Long id) {
+        return livroRepository.findById(id);
+    }
+    
+    public Livro save(Livro livro) {
+        return livroRepository.save(livro);
     }
 }
