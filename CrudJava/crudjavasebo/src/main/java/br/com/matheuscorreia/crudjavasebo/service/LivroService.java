@@ -53,6 +53,10 @@ public class LivroService {
     public Optional<Livro> findById(Long id) {
         return livroRepository.findById(id);
     }
+
+    public List<Livro> findAll() {
+        return livroRepository.findAll();
+    }
     
     public Livro save(Livro livro) {
         return livroRepository.save(livro);

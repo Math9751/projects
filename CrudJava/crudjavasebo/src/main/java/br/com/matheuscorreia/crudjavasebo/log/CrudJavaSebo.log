@@ -166,3 +166,495 @@
 2024-05-25T00:26:27.061-03:00  INFO 5720 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Starting CrudjavaseboApplicationTests using Java 17.0.11 with PID 5720 (started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
 2024-05-25T00:26:27.068-03:00  INFO 5720 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : No active profile set, falling back to 1 default profile: "default"
 2024-05-25T00:26:41.790-03:00  INFO 5720 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Started CrudjavaseboApplicationTests in 16.027 seconds (process running for 20.203)
+2024-05-25T03:03:08.683-03:00  INFO 12768 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Starting CrudjavaseboApplicationTests using Java 17.0.11 with PID 12768 (started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T03:03:08.700-03:00  INFO 12768 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T03:03:39.075-03:00  INFO 12768 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Started CrudjavaseboApplicationTests in 34.165 seconds (process running for 46.448)
+2024-05-25T13:24:00.601-03:00  INFO 9288 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 9288 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T13:24:00.719-03:00  INFO 9288 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T13:24:07.918-03:00  INFO 9288 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T13:24:10.263-03:00  INFO 9288 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2227 ms. Found 1 JPA repository interface.
+2024-05-25T13:24:16.646-03:00  INFO 9288 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T13:24:16.748-03:00  INFO 9288 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T13:24:16.751-03:00  INFO 9288 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T13:24:17.168-03:00  INFO 9288 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T13:24:17.170-03:00  INFO 9288 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 15911 ms
+2024-05-25T13:24:17.412-03:00  INFO 9288 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T13:24:18.962-03:00  INFO 9288 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T13:24:18.994-03:00  INFO 9288 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T13:24:19.064-03:00  INFO 9288 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T13:24:25.536-03:00  INFO 9288 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T13:24:26.723-03:00  INFO 9288 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T13:24:27.210-03:00  INFO 9288 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T13:24:29.686-03:00  INFO 9288 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T13:24:29.901-03:00  WARN 9288 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T13:24:34.892-03:00  INFO 9288 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T13:24:35.132-03:00  INFO 9288 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:24:37.838-03:00  WARN 9288 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T13:24:42.554-03:00  INFO 9288 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T13:24:42.922-03:00  INFO 9288 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 45.199 seconds (process running for 49.458)
+2024-05-25T13:26:58.228-03:00  INFO 9288 --- [crudjavasebo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T13:26:58.291-03:00  INFO 9288 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T13:26:58.528-03:00  INFO 9288 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 234 ms
+2024-05-25T13:26:59.071-03:00  WARN 9288 --- [crudjavasebo] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-25T13:27:32.357-03:00  INFO 9288 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:27:32.709-03:00  INFO 9288 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T13:27:32.739-03:00  INFO 9288 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T13:30:52.694-03:00  INFO 492 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Starting CrudjavaseboApplicationTests using Java 17.0.11 with PID 492 (started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T13:30:52.698-03:00  INFO 492 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T13:31:08.434-03:00  INFO 492 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Started CrudjavaseboApplicationTests in 18.209 seconds (process running for 28.045)
+2024-05-25T13:39:39.183-03:00  INFO 9804 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 9804 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T13:39:39.194-03:00  INFO 9804 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T13:39:42.142-03:00  INFO 9804 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T13:39:42.670-03:00  INFO 9804 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 483 ms. Found 1 JPA repository interface.
+2024-05-25T13:39:44.631-03:00  INFO 9804 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T13:39:44.676-03:00  INFO 9804 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T13:39:44.677-03:00  INFO 9804 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T13:39:44.806-03:00  INFO 9804 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T13:39:44.808-03:00  INFO 9804 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5384 ms
+2024-05-25T13:39:44.941-03:00  INFO 9804 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T13:39:45.734-03:00  INFO 9804 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T13:39:45.738-03:00  INFO 9804 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T13:39:45.767-03:00  INFO 9804 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T13:39:46.160-03:00  INFO 9804 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T13:39:46.435-03:00  INFO 9804 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T13:39:46.595-03:00  INFO 9804 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T13:39:47.858-03:00  INFO 9804 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T13:39:48.040-03:00  WARN 9804 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T13:39:50.155-03:00  INFO 9804 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T13:39:50.261-03:00  INFO 9804 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:39:51.017-03:00  WARN 9804 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T13:39:52.887-03:00  INFO 9804 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T13:39:53.021-03:00  INFO 9804 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 15.374 seconds (process running for 17.325)
+2024-05-25T13:40:24.688-03:00  INFO 9804 --- [crudjavasebo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T13:40:24.691-03:00  INFO 9804 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T13:40:24.758-03:00  INFO 9804 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 50 ms
+2024-05-25T13:40:24.875-03:00  WARN 9804 --- [crudjavasebo] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-25T13:40:49.608-03:00  INFO 9804 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:40:49.762-03:00  INFO 9804 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T13:40:49.781-03:00  INFO 9804 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T13:40:59.544-03:00  INFO 10184 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 10184 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T13:40:59.572-03:00  INFO 10184 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T13:41:02.406-03:00  INFO 10184 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T13:41:04.402-03:00  INFO 10184 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1875 ms. Found 1 JPA repository interface.
+2024-05-25T13:41:06.100-03:00  INFO 10184 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T13:41:06.122-03:00  INFO 10184 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T13:41:06.123-03:00  INFO 10184 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T13:41:06.284-03:00  INFO 10184 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T13:41:06.286-03:00  INFO 10184 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6445 ms
+2024-05-25T13:41:06.424-03:00  INFO 10184 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T13:41:07.432-03:00  INFO 10184 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T13:41:07.448-03:00  INFO 10184 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T13:41:07.635-03:00  INFO 10184 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T13:41:08.149-03:00  INFO 10184 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T13:41:08.980-03:00  INFO 10184 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T13:41:09.137-03:00  INFO 10184 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T13:41:10.608-03:00  INFO 10184 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T13:41:10.782-03:00  WARN 10184 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T13:41:14.086-03:00  INFO 10184 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T13:41:14.321-03:00  INFO 10184 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:41:15.371-03:00  WARN 10184 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T13:41:17.148-03:00  INFO 10184 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T13:41:17.220-03:00  INFO 10184 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 20.113 seconds (process running for 22.26)
+2024-05-25T13:41:28.759-03:00  INFO 10184 --- [crudjavasebo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T13:41:28.762-03:00  INFO 10184 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T13:41:28.766-03:00  INFO 10184 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-05-25T13:41:28.856-03:00  WARN 10184 --- [crudjavasebo] [http-nio-8080-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-25T13:41:55.509-03:00  INFO 10184 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:41:55.516-03:00  INFO 10184 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T13:41:55.526-03:00  INFO 10184 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T13:42:11.433-03:00  INFO 4672 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 4672 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T13:42:11.451-03:00  INFO 4672 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T13:42:14.172-03:00  INFO 4672 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T13:42:14.696-03:00  INFO 4672 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 434 ms. Found 1 JPA repository interface.
+2024-05-25T13:42:16.927-03:00  INFO 4672 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T13:42:16.965-03:00  INFO 4672 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T13:42:16.966-03:00  INFO 4672 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T13:42:17.124-03:00  INFO 4672 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T13:42:17.125-03:00  INFO 4672 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5428 ms
+2024-05-25T13:42:17.236-03:00  INFO 4672 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T13:42:17.959-03:00  INFO 4672 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T13:42:17.963-03:00  INFO 4672 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T13:42:17.994-03:00  INFO 4672 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T13:42:18.383-03:00  INFO 4672 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T13:42:18.712-03:00  INFO 4672 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T13:42:18.932-03:00  INFO 4672 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T13:42:19.943-03:00  INFO 4672 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T13:42:20.081-03:00  WARN 4672 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T13:42:21.963-03:00  INFO 4672 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T13:42:22.042-03:00  INFO 4672 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:42:22.750-03:00  WARN 4672 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T13:42:24.457-03:00  INFO 4672 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T13:42:24.512-03:00  INFO 4672 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 14.898 seconds (process running for 18.111)
+2024-05-25T13:42:32.343-03:00  INFO 4672 --- [crudjavasebo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T13:42:32.345-03:00  INFO 4672 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T13:42:32.349-03:00  INFO 4672 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-25T13:42:32.432-03:00  WARN 4672 --- [crudjavasebo] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-25T13:43:12.196-03:00  INFO 4672 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:43:12.208-03:00  INFO 4672 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T13:43:12.217-03:00  INFO 4672 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T13:43:59.786-03:00  INFO 9160 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 9160 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T13:43:59.805-03:00  INFO 9160 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T13:44:03.571-03:00  INFO 9160 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T13:44:04.273-03:00  INFO 9160 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 656 ms. Found 1 JPA repository interface.
+2024-05-25T13:44:06.154-03:00  INFO 9160 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T13:44:06.214-03:00  INFO 9160 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T13:44:06.215-03:00  INFO 9160 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T13:44:06.376-03:00  INFO 9160 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T13:44:06.378-03:00  INFO 9160 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6303 ms
+2024-05-25T13:44:06.524-03:00  INFO 9160 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T13:44:07.550-03:00  INFO 9160 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T13:44:07.555-03:00  INFO 9160 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T13:44:07.586-03:00  INFO 9160 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T13:44:08.106-03:00  INFO 9160 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T13:44:08.430-03:00  INFO 9160 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T13:44:08.582-03:00  INFO 9160 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T13:44:09.816-03:00  INFO 9160 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T13:44:09.943-03:00  WARN 9160 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T13:44:12.008-03:00  INFO 9160 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T13:44:12.084-03:00  INFO 9160 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:44:13.109-03:00  WARN 9160 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T13:44:15.525-03:00  INFO 9160 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T13:44:15.598-03:00  INFO 9160 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 18.986 seconds (process running for 23.44)
+2024-05-25T13:44:25.499-03:00  INFO 9160 --- [crudjavasebo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T13:44:25.513-03:00  INFO 9160 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T13:44:25.542-03:00  INFO 9160 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 26 ms
+2024-05-25T13:44:44.476-03:00  WARN 9160 --- [crudjavasebo] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-25T13:45:20.294-03:00  WARN 9160 --- [crudjavasebo] [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "1L"]
+2024-05-25T13:45:58.269-03:00  INFO 9160 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:45:58.284-03:00  INFO 9160 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T13:45:58.304-03:00  INFO 9160 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T13:55:52.571-03:00  INFO 1416 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 1416 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T13:55:52.582-03:00  INFO 1416 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T13:55:54.965-03:00  INFO 1416 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T13:55:55.537-03:00  INFO 1416 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 533 ms. Found 1 JPA repository interface.
+2024-05-25T13:55:58.455-03:00  INFO 1416 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T13:55:58.496-03:00  INFO 1416 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T13:55:58.497-03:00  INFO 1416 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T13:55:58.653-03:00  INFO 1416 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T13:55:58.655-03:00  INFO 1416 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5852 ms
+2024-05-25T13:55:58.780-03:00  INFO 1416 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T13:55:59.535-03:00  INFO 1416 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T13:55:59.540-03:00  INFO 1416 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T13:55:59.579-03:00  INFO 1416 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T13:55:59.973-03:00  INFO 1416 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T13:56:00.321-03:00  INFO 1416 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T13:56:00.472-03:00  INFO 1416 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T13:56:01.772-03:00  INFO 1416 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T13:56:01.967-03:00  WARN 1416 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T13:56:04.240-03:00  INFO 1416 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T13:56:04.321-03:00  INFO 1416 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:56:05.239-03:00  WARN 1416 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T13:56:07.700-03:00  INFO 1416 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T13:56:07.795-03:00  INFO 1416 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 17.185 seconds (process running for 18.949)
+2024-05-25T13:56:45.737-03:00  INFO 1416 --- [crudjavasebo] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T13:56:45.743-03:00  INFO 1416 --- [crudjavasebo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T13:56:45.747-03:00  INFO 1416 --- [crudjavasebo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-25T13:57:09.233-03:00  WARN 1416 --- [crudjavasebo] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-25T13:58:06.722-03:00  INFO 1416 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T13:58:06.790-03:00  INFO 1416 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T13:58:06.805-03:00  INFO 1416 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T14:02:04.410-03:00  INFO 3848 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 3848 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T14:02:04.424-03:00  INFO 3848 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T14:02:07.397-03:00  INFO 3848 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T14:02:08.510-03:00  INFO 3848 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1089 ms. Found 1 JPA repository interface.
+2024-05-25T14:02:11.125-03:00  INFO 3848 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T14:02:11.160-03:00  INFO 3848 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T14:02:11.162-03:00  INFO 3848 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T14:02:11.332-03:00  INFO 3848 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T14:02:11.334-03:00  INFO 3848 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6618 ms
+2024-05-25T14:02:11.615-03:00  INFO 3848 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T14:02:12.509-03:00  INFO 3848 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T14:02:12.513-03:00  INFO 3848 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T14:02:12.560-03:00  INFO 3848 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T14:02:13.036-03:00  INFO 3848 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T14:02:13.362-03:00  INFO 3848 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T14:02:13.492-03:00  INFO 3848 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T14:02:14.408-03:00  INFO 3848 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T14:02:14.532-03:00  WARN 3848 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T14:02:16.493-03:00  INFO 3848 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T14:02:16.585-03:00  INFO 3848 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:02:18.509-03:00  WARN 3848 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T14:02:21.428-03:00  INFO 3848 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T14:02:21.531-03:00  INFO 3848 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 19.154 seconds (process running for 21.407)
+2024-05-25T14:02:36.017-03:00  INFO 3848 --- [crudjavasebo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T14:02:36.020-03:00  INFO 3848 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T14:02:36.024-03:00  INFO 3848 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-25T14:03:08.148-03:00  INFO 3848 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:03:08.426-03:00  INFO 3848 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T14:03:08.644-03:00  INFO 3848 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T14:10:44.735-03:00  INFO 4932 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 4932 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T14:10:44.748-03:00  INFO 4932 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T14:10:47.534-03:00  INFO 4932 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T14:10:50.301-03:00  INFO 4932 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2739 ms. Found 1 JPA repository interface.
+2024-05-25T14:10:52.589-03:00  INFO 4932 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T14:10:52.658-03:00  INFO 4932 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T14:10:52.660-03:00  INFO 4932 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T14:10:52.807-03:00  INFO 4932 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T14:10:52.808-03:00  INFO 4932 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7872 ms
+2024-05-25T14:10:52.932-03:00  INFO 4932 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T14:10:53.782-03:00  INFO 4932 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T14:10:53.791-03:00  INFO 4932 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T14:10:53.833-03:00  INFO 4932 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T14:10:54.292-03:00  INFO 4932 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T14:10:54.575-03:00  INFO 4932 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T14:10:54.690-03:00  INFO 4932 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T14:10:55.598-03:00  INFO 4932 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T14:10:55.712-03:00  WARN 4932 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T14:10:57.864-03:00  INFO 4932 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T14:10:57.938-03:00  INFO 4932 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:10:58.841-03:00  WARN 4932 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T14:11:01.126-03:00  INFO 4932 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T14:11:01.856-03:00  INFO 4932 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 18.835 seconds (process running for 21.123)
+2024-05-25T14:11:13.097-03:00  INFO 4932 --- [crudjavasebo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T14:11:13.098-03:00  INFO 4932 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T14:11:13.102-03:00  INFO 4932 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-25T14:13:59.348-03:00  INFO 4932 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:13:59.564-03:00  INFO 4932 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T14:13:59.594-03:00  INFO 4932 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T14:17:29.345-03:00  INFO 11300 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication using Java 17.0.11 with PID 11300 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\classes started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T14:17:29.365-03:00  INFO 11300 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T14:17:32.508-03:00  INFO 11300 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T14:17:33.054-03:00  INFO 11300 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 500 ms. Found 1 JPA repository interface.
+2024-05-25T14:17:35.014-03:00  INFO 11300 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T14:17:35.071-03:00  INFO 11300 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T14:17:35.075-03:00  INFO 11300 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T14:17:35.367-03:00  INFO 11300 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T14:17:35.374-03:00  INFO 11300 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5830 ms
+2024-05-25T14:17:35.830-03:00  INFO 11300 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T14:17:36.583-03:00  INFO 11300 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T14:17:36.588-03:00  INFO 11300 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T14:17:36.627-03:00  INFO 11300 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T14:17:37.394-03:00  INFO 11300 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T14:17:37.722-03:00  INFO 11300 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T14:17:37.915-03:00  INFO 11300 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T14:17:39.564-03:00  INFO 11300 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T14:17:39.872-03:00  WARN 11300 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T14:17:42.019-03:00  INFO 11300 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T14:17:42.104-03:00  INFO 11300 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:17:43.426-03:00  WARN 11300 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T14:17:48.521-03:00  INFO 11300 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T14:17:48.716-03:00  INFO 11300 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 20.534 seconds (process running for 24.759)
+2024-05-25T14:19:16.135-03:00  INFO 2256 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication using Java 17.0.11 with PID 2256 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\classes started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T14:19:16.157-03:00  INFO 2256 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T14:19:19.241-03:00  INFO 2256 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T14:19:19.715-03:00  INFO 2256 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 420 ms. Found 1 JPA repository interface.
+2024-05-25T14:19:22.526-03:00  INFO 2256 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T14:19:22.561-03:00  INFO 2256 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T14:19:22.562-03:00  INFO 2256 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T14:19:22.748-03:00  INFO 2256 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T14:19:22.750-03:00  INFO 2256 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6394 ms
+2024-05-25T14:19:22.850-03:00  INFO 2256 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T14:19:23.724-03:00  INFO 2256 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T14:19:23.729-03:00  INFO 2256 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T14:19:23.779-03:00  INFO 2256 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T14:19:24.513-03:00  INFO 2256 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T14:19:24.849-03:00  INFO 2256 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T14:19:25.089-03:00  INFO 2256 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T14:19:26.447-03:00  INFO 2256 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T14:19:26.610-03:00  WARN 2256 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T14:19:28.452-03:00  INFO 2256 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T14:19:28.616-03:00  INFO 2256 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:19:29.856-03:00  WARN 2256 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T14:19:33.439-03:00  INFO 2256 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T14:19:33.519-03:00  INFO 2256 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 18.506 seconds (process running for 19.874)
+2024-05-25T14:39:22.641-03:00  INFO 7080 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 7080 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T14:39:22.659-03:00  INFO 7080 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T14:39:29.158-03:00  INFO 7080 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T14:39:30.173-03:00  INFO 7080 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 914 ms. Found 1 JPA repository interface.
+2024-05-25T14:39:34.804-03:00  INFO 7080 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T14:39:34.854-03:00  INFO 7080 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T14:39:34.855-03:00  INFO 7080 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T14:39:34.996-03:00  INFO 7080 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T14:39:34.997-03:00  INFO 7080 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 11478 ms
+2024-05-25T14:39:35.152-03:00  INFO 7080 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T14:39:36.423-03:00  INFO 7080 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T14:39:36.559-03:00  INFO 7080 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T14:39:36.927-03:00  INFO 7080 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T14:39:37.854-03:00  INFO 7080 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T14:39:38.409-03:00  INFO 7080 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T14:39:38.632-03:00  INFO 7080 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T14:39:39.720-03:00  INFO 7080 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T14:39:39.874-03:00  WARN 7080 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T14:39:43.715-03:00  INFO 7080 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T14:39:44.337-03:00  INFO 7080 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:39:46.107-03:00  WARN 7080 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T14:39:50.436-03:00  INFO 7080 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T14:39:50.931-03:00  INFO 7080 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 32.491 seconds (process running for 34.519)
+2024-05-25T14:43:28.942-03:00  INFO 7080 --- [crudjavasebo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T14:43:29.077-03:00  INFO 7080 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T14:43:30.296-03:00  INFO 7080 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1214 ms
+2024-05-25T14:51:48.117-03:00  INFO 7080 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:51:48.415-03:00  INFO 7080 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T14:51:48.486-03:00  INFO 7080 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T14:55:01.145-03:00  INFO 3548 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 3548 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T14:55:01.156-03:00  INFO 3548 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T14:55:03.816-03:00  INFO 3548 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T14:55:04.398-03:00  INFO 3548 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 515 ms. Found 1 JPA repository interface.
+2024-05-25T14:55:06.201-03:00  INFO 3548 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T14:55:06.225-03:00  INFO 3548 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T14:55:06.226-03:00  INFO 3548 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T14:55:06.389-03:00  INFO 3548 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T14:55:06.391-03:00  INFO 3548 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5009 ms
+2024-05-25T14:55:06.515-03:00  INFO 3548 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T14:55:07.130-03:00  INFO 3548 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T14:55:07.135-03:00  INFO 3548 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T14:55:07.167-03:00  INFO 3548 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T14:55:07.596-03:00  INFO 3548 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T14:55:07.855-03:00  INFO 3548 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T14:55:08.044-03:00  INFO 3548 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T14:55:09.098-03:00  INFO 3548 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T14:55:09.271-03:00  WARN 3548 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T14:55:11.094-03:00  INFO 3548 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T14:55:11.172-03:00  INFO 3548 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:55:12.113-03:00  WARN 3548 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T14:55:14.305-03:00  INFO 3548 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T14:55:14.460-03:00  INFO 3548 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 15.218 seconds (process running for 16.712)
+2024-05-25T14:56:19.623-03:00  INFO 3548 --- [crudjavasebo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T14:56:19.626-03:00  INFO 3548 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T14:56:19.646-03:00  INFO 3548 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2024-05-25T14:56:52.503-03:00  INFO 3548 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:56:53.230-03:00  INFO 3548 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T14:56:53.313-03:00  INFO 3548 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T14:58:23.754-03:00  INFO 1492 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 1492 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T14:58:23.876-03:00  INFO 1492 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T14:58:30.528-03:00  INFO 1492 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T14:58:31.200-03:00  INFO 1492 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 588 ms. Found 1 JPA repository interface.
+2024-05-25T14:58:32.979-03:00  INFO 1492 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T14:58:33.022-03:00  INFO 1492 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T14:58:33.022-03:00  INFO 1492 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T14:58:33.176-03:00  INFO 1492 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T14:58:33.177-03:00  INFO 1492 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7259 ms
+2024-05-25T14:58:33.272-03:00  INFO 1492 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T14:58:34.018-03:00  INFO 1492 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T14:58:34.024-03:00  INFO 1492 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T14:58:34.053-03:00  INFO 1492 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T14:58:34.559-03:00  INFO 1492 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T14:58:34.991-03:00  INFO 1492 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T14:58:35.414-03:00  INFO 1492 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T14:58:38.067-03:00  INFO 1492 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T14:58:38.267-03:00  WARN 1492 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T14:58:40.857-03:00  INFO 1492 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T14:58:40.953-03:00  INFO 1492 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T14:58:42.319-03:00  WARN 1492 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T14:58:44.797-03:00  INFO 1492 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T14:58:44.882-03:00  INFO 1492 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 24.267 seconds (process running for 27.32)
+2024-05-25T15:03:54.479-03:00  INFO 1492 --- [crudjavasebo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T15:03:54.513-03:00  INFO 1492 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T15:03:54.664-03:00  INFO 1492 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 148 ms
+2024-05-25T15:14:40.044-03:00  INFO 1492 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T15:14:40.338-03:00  INFO 1492 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T15:14:40.387-03:00  INFO 1492 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T15:15:00.074-03:00  INFO 2924 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication v1.0-SNAPSHOT using Java 17.0.11 with PID 2924 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\crudjavasebo-1.0-SNAPSHOT.jar started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T15:15:00.101-03:00  INFO 2924 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T15:15:05.054-03:00  INFO 2924 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T15:15:05.616-03:00  INFO 2924 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 509 ms. Found 1 JPA repository interface.
+2024-05-25T15:15:07.709-03:00  INFO 2924 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T15:15:07.764-03:00  INFO 2924 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T15:15:07.768-03:00  INFO 2924 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T15:15:07.939-03:00  INFO 2924 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T15:15:07.940-03:00  INFO 2924 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6913 ms
+2024-05-25T15:15:08.050-03:00  INFO 2924 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T15:15:09.352-03:00  INFO 2924 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T15:15:09.367-03:00  INFO 2924 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T15:15:09.438-03:00  INFO 2924 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T15:15:10.337-03:00  INFO 2924 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T15:15:10.619-03:00  INFO 2924 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T15:15:10.798-03:00  INFO 2924 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T15:15:11.991-03:00  INFO 2924 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T15:15:12.297-03:00  WARN 2924 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T15:15:18.106-03:00  INFO 2924 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T15:15:18.232-03:00  INFO 2924 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T15:15:19.799-03:00  WARN 2924 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T15:15:21.788-03:00  INFO 2924 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T15:15:21.858-03:00  INFO 2924 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 24.703 seconds (process running for 28.96)
+2024-05-25T15:16:28.036-03:00  INFO 2924 --- [crudjavasebo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T15:16:28.050-03:00  INFO 2924 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-25T15:16:28.064-03:00  INFO 2924 --- [crudjavasebo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-25T15:18:53.714-03:00  INFO 11872 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication using Java 17.0.11 with PID 11872 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\classes started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T15:18:53.785-03:00  INFO 11872 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T15:18:58.449-03:00  INFO 11872 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T15:18:58.900-03:00  INFO 11872 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 401 ms. Found 1 JPA repository interface.
+2024-05-25T15:19:00.858-03:00  INFO 11872 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T15:19:00.894-03:00  INFO 11872 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T15:19:00.895-03:00  INFO 11872 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T15:19:01.093-03:00  INFO 11872 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T15:19:01.096-03:00  INFO 11872 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6829 ms
+2024-05-25T15:19:01.320-03:00  INFO 11872 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T15:19:02.183-03:00  INFO 11872 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T15:19:02.242-03:00  INFO 11872 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T15:19:02.413-03:00  INFO 11872 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T15:19:02.857-03:00  INFO 11872 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T15:19:03.108-03:00  INFO 11872 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T15:19:03.277-03:00  INFO 11872 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T15:19:04.547-03:00  INFO 11872 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T15:19:04.691-03:00  WARN 11872 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T15:19:06.844-03:00  INFO 11872 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T15:19:06.972-03:00  INFO 11872 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T15:19:07.619-03:00  INFO 11872 --- [crudjavasebo] [main] b.c.m.c.controller.LivroController       : LivroController inicializado
+2024-05-25T15:19:07.948-03:00  WARN 11872 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T15:19:12.675-03:00  INFO 11872 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T15:19:12.747-03:00  INFO 11872 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 20.717 seconds (process running for 21.682)
+2024-05-25T15:23:48.732-03:00  INFO 11872 --- [crudjavasebo] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T15:23:48.773-03:00  INFO 11872 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T15:23:49.395-03:00  INFO 11872 --- [crudjavasebo] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 621 ms
+2024-05-25T15:23:49.583-03:00  WARN 11872 --- [crudjavasebo] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+2024-05-25T15:24:09.945-03:00  INFO 11872 --- [crudjavasebo] [http-nio-8080-exec-3] b.c.m.c.controller.LivroController       : Livro criado com sucesso: br.com.matheuscorreia.crudjavasebo.model.Livro@1e73cf53
+2024-05-25T15:24:48.652-03:00  WARN 11872 --- [crudjavasebo] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-05-25T15:53:47.079-03:00  INFO 9056 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication using Java 17.0.11 with PID 9056 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\classes started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T15:53:47.092-03:00  INFO 9056 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T15:53:53.968-03:00  INFO 9056 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T15:53:54.762-03:00  INFO 9056 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 701 ms. Found 1 JPA repository interface.
+2024-05-25T15:53:59.324-03:00  INFO 9056 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T15:53:59.375-03:00  INFO 9056 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T15:53:59.381-03:00  INFO 9056 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T15:54:00.014-03:00  INFO 9056 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T15:54:00.019-03:00  INFO 9056 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 12074 ms
+2024-05-25T15:54:00.173-03:00  INFO 9056 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T15:54:01.202-03:00  INFO 9056 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T15:54:01.210-03:00  INFO 9056 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T15:54:01.268-03:00  INFO 9056 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T15:54:01.905-03:00  INFO 9056 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T15:54:02.168-03:00  INFO 9056 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T15:54:02.298-03:00  INFO 9056 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T15:54:03.756-03:00  INFO 9056 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T15:54:03.959-03:00  WARN 9056 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T15:54:10.048-03:00  INFO 9056 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T15:54:10.213-03:00  INFO 9056 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T15:54:11.147-03:00  INFO 9056 --- [crudjavasebo] [main] b.c.m.c.controller.LivroController       : LivroController inicializado
+2024-05-25T15:54:11.555-03:00  WARN 9056 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T15:54:14.809-03:00  INFO 9056 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T15:54:14.961-03:00  INFO 9056 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 30.677 seconds (process running for 37.125)
+2024-05-25T16:29:58.866-03:00  INFO 9056 --- [crudjavasebo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T16:29:58.930-03:00  INFO 9056 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T16:29:59.153-03:00  INFO 9056 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 220 ms
+2024-05-25T16:30:03.352-03:00  INFO 9056 --- [crudjavasebo] [http-nio-8080-exec-2] b.c.m.c.controller.LivroController       : Livro criado com sucesso: br.com.matheuscorreia.crudjavasebo.model.Livro@2bda6437
+2024-05-25T16:30:24.317-03:00  WARN 9056 --- [crudjavasebo] [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' is not supported]
+2024-05-25T16:46:20.090-03:00  INFO 10636 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Starting CrudjavaseboApplication using Java 17.0.11 with PID 10636 (C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo\target\classes started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T16:46:20.100-03:00  INFO 10636 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T16:46:23.984-03:00  INFO 10636 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-25T16:46:24.954-03:00  INFO 10636 --- [crudjavasebo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 853 ms. Found 1 JPA repository interface.
+2024-05-25T16:46:29.341-03:00  INFO 10636 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-05-25T16:46:29.374-03:00  INFO 10636 --- [crudjavasebo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-25T16:46:29.375-03:00  INFO 10636 --- [crudjavasebo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-05-25T16:46:29.629-03:00  INFO 10636 --- [crudjavasebo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-25T16:46:29.632-03:00  INFO 10636 --- [crudjavasebo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9364 ms
+2024-05-25T16:46:29.772-03:00  INFO 10636 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-25T16:46:30.470-03:00  INFO 10636 --- [crudjavasebo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-05-25T16:46:30.479-03:00  INFO 10636 --- [crudjavasebo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-25T16:46:30.528-03:00  INFO 10636 --- [crudjavasebo] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:testdb'
+2024-05-25T16:46:30.980-03:00  INFO 10636 --- [crudjavasebo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-05-25T16:46:31.271-03:00  INFO 10636 --- [crudjavasebo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-05-25T16:46:31.548-03:00  INFO 10636 --- [crudjavasebo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-05-25T16:46:33.787-03:00  INFO 10636 --- [crudjavasebo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-25T16:46:34.065-03:00  WARN 10636 --- [crudjavasebo] [main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-05-25T16:46:37.279-03:00  INFO 10636 --- [crudjavasebo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-05-25T16:46:38.151-03:00  INFO 10636 --- [crudjavasebo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-25T16:46:39.045-03:00  INFO 10636 --- [crudjavasebo] [main] b.c.m.c.controller.LivroController       : LivroController inicializado
+2024-05-25T16:46:39.711-03:00  WARN 10636 --- [crudjavasebo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-25T16:46:42.143-03:00  INFO 10636 --- [crudjavasebo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-05-25T16:46:42.313-03:00  INFO 10636 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplication          : Started CrudjavaseboApplication in 24.438 seconds (process running for 25.885)
+2024-05-25T16:48:47.735-03:00  INFO 10636 --- [crudjavasebo] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-25T16:48:47.778-03:00  INFO 10636 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-25T16:48:47.991-03:00  INFO 10636 --- [crudjavasebo] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 209 ms
+2024-05-25T16:48:55.757-03:00  INFO 10636 --- [crudjavasebo] [http-nio-8080-exec-2] b.c.m.c.controller.LivroController       : Livro criado com sucesso: br.com.matheuscorreia.crudjavasebo.model.Livro@297c5d00
+2024-05-25T16:50:49.829-03:00  INFO 10636 --- [crudjavasebo] [http-nio-8080-exec-8] b.c.m.c.controller.LivroController       : Livro criado com sucesso: br.com.matheuscorreia.crudjavasebo.model.Livro@3ed19a78

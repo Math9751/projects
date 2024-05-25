@@ -1,6 +1,6 @@
 package br.com.matheuscorreia.crudjavasebo.controller;
 
-// import java.util.List;
+import java.util.List;
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -17,8 +17,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.matheuscorreia.crudjavasebo.dto.DeleteResponse;
+import br.com.matheuscorreia.crudjavasebo.dto.UpdateResponse;
 import br.com.matheuscorreia.crudjavasebo.model.Livro;
 import br.com.matheuscorreia.crudjavasebo.service.LivroService;
+import jakarta.annotation.PostConstruct;
 import jakarta.validation.Valid;
 // import br.com.matheuscorreia.crudjavasebo.exception.LivroNotFoundException;
 
@@ -34,9 +37,16 @@ public class LivroController {
         this.livroService = livroService;
     }
 
-    @PostMapping("/api/livros/cadastro")
+    @PostConstruct
+    public void init() {
+        log.info("LivroController inicializado");
+    }
+
+    //Criação de um novo registro
+    @PostMapping
 public ResponseEntity<Object> createLivro(@Valid @RequestBody Livro livro) {
     log.debug("Request to create Livro: {}", livro);
+    System.out.println("Chegou no createLivro");
     Livro createdLivro = livroService.create(livro);
     if (createdLivro.getId() != null) {
         log.info("Livro criado com sucesso: {}", createdLivro);
@@ -47,8 +57,14 @@ public ResponseEntity<Object> createLivro(@Valid @RequestBody Livro livro) {
     }
 }
 
+//Busca padrão que retorna todos os registros do banco
+@GetMapping
+    public ResponseEntity<List<Livro>> getAllLivros() {
+        List<Livro> livros = livroService.findAll();
+        return ResponseEntity.ok(livros);
+    }
 
-
+//Realiza busca de um item por um id
 @GetMapping("/{id}")
 public ResponseEntity<Livro> getLivroById(@PathVariable Long id) {
     Optional<Livro> livroOptional = livroService.findById(id);
@@ -59,33 +75,37 @@ public ResponseEntity<Livro> getLivroById(@PathVariable Long id) {
     }
 }
 
-
-    @PutMapping("/apli/livros/editar/{id}")
-    public ResponseEntity<Livro> updateLivro(@PathVariable Long id, @RequestBody Livro livro) {
-        try {
-            return livroService.findById(id)
-                    .map(existingLivro -> {
-                        existingLivro.setIsbn(livro.getIsbn());
-                        existingLivro.setTitulo(livro.getTitulo());
-                        existingLivro.setSinopse(livro.getSinopse());
-                        existingLivro.setAutor(livro.getAutor());
-                        existingLivro.setPreco(livro.getPreco());
-                        existingLivro.setEmEstoque(livro.isEmEstoque());
-                        livroService.save(existingLivro);
-                        return ResponseEntity.ok(existingLivro);
-                    })
-                    .orElse(ResponseEntity.notFound().build());
-        } catch (Exception ex) {
-            log.error("Erro ao atualizar livro: {}", ex.getMessage());
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
-        }
+//Atualiza um registro a partir de seu respectivo id fornecido
+@PutMapping("/{id}")
+public ResponseEntity<UpdateResponse> updateLivro(@PathVariable Long id, @RequestBody Livro livro) {
+    try {
+        return livroService.findById(id)
+                .map(existingLivro -> {
+                    existingLivro.setIsbn(livro.getIsbn());
+                    existingLivro.setTitulo(livro.getTitulo());
+                    existingLivro.setSinopse(livro.getSinopse());
+                    existingLivro.setAutor(livro.getAutor());
+                    existingLivro.setPreco(livro.getPreco());
+                    existingLivro.setEmEstoque(livro.isEmEstoque());
+                    livroService.save(existingLivro);
+                    UpdateResponse response = new UpdateResponse("Livro atualizado com sucesso", existingLivro);
+                    return ResponseEntity.ok(response);
+                })
+                .orElse(ResponseEntity.notFound().build());
+    } catch (Exception ex) {
+        log.error("Erro ao atualizar livro: {}", ex.getMessage());
+        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(null);
     }
-    
-    @DeleteMapping("/api/livros/excluir{id}")
-public ResponseEntity<Void> deleteLivro(@PathVariable Long id) {
-    if (livroService.findById(id).isPresent()) {
+}
+
+//Exclui um registro a partir de seu respectivo id fornecido 
+@DeleteMapping("/{id}")
+public ResponseEntity<DeleteResponse> deleteLivro(@PathVariable Long id) {
+    Optional<Livro> livroOptional = livroService.findById(id);
+    if (livroOptional.isPresent()) {
         livroService.deleteById(id);
-        return ResponseEntity.noContent().build();
+        DeleteResponse response = new DeleteResponse("Livro deletado com sucesso");
+        return ResponseEntity.ok(response);
     } else {
         return ResponseEntity.notFound().build();
     }
