@@ -115,3 +115,54 @@
 
 {"timestamp":"2024-05-25T03:18:21.540+00:00","path":"/api/livros/cadastro","status":405,"error":"Method Not Allowed","requestId":"3848be09"}
 
+2024-05-25T00:23:58.543-03:00  INFO 12712 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Starting CrudjavaseboApplicationTests using Java 17.0.11 with PID 12712 (started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T00:23:58.548-03:00  INFO 12712 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T00:24:10.733-03:00  INFO 12712 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Started CrudjavaseboApplicationTests in 13.389 seconds (process running for 18.632)
+2024-05-25T00:24:11.390-03:00 ERROR 12712 --- [crudjavasebo] [main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> POST /api/livros/cadastro
+> WebTestClient-Request-Id: [1]
+> Content-Type: [application/json]
+> Content-Length: [89]
+
+{"id":null,"isbn":null,"titulo":"","sinopse":"","autor":"","preco":0.0,"emEstoque":false}
+
+< 405 METHOD_NOT_ALLOWED Method Not Allowed
+< Content-Type: [application/json]
+< Content-Length: [139]
+
+{"timestamp":"2024-05-25T03:24:11.278+00:00","path":"/api/livros/cadastro","status":405,"error":"Method Not Allowed","requestId":"e5f00b8"}
+
+2024-05-25T00:24:11.501-03:00 ERROR 12712 --- [crudjavasebo] [main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> POST /api/livros/cadastro
+> WebTestClient-Request-Id: [2]
+> Content-Type: [application/json]
+> Content-Length: [89]
+
+{"id":null,"isbn":null,"titulo":"","sinopse":"","autor":"","preco":0.0,"emEstoque":false}
+
+< 405 METHOD_NOT_ALLOWED Method Not Allowed
+< Content-Type: [application/json]
+< Content-Length: [139]
+
+{"timestamp":"2024-05-25T03:24:11.496+00:00","path":"/api/livros/cadastro","status":405,"error":"Method Not Allowed","requestId":"3580e6f"}
+
+2024-05-25T00:24:11.538-03:00 ERROR 12712 --- [crudjavasebo] [main] o.s.t.w.reactive.server.ExchangeResult   : Request details for assertion failure:
+
+> POST /api/livros/cadastro
+> WebTestClient-Request-Id: [3]
+> Content-Type: [application/json]
+> Content-Length: [89]
+
+{"id":null,"isbn":null,"titulo":"","sinopse":"","autor":"","preco":0.0,"emEstoque":false}
+
+< 405 METHOD_NOT_ALLOWED Method Not Allowed
+< Content-Type: [application/json]
+< Content-Length: [140]
+
+{"timestamp":"2024-05-25T03:24:11.536+00:00","path":"/api/livros/cadastro","status":405,"error":"Method Not Allowed","requestId":"3583ed9d"}
+
+2024-05-25T00:26:27.061-03:00  INFO 5720 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Starting CrudjavaseboApplicationTests using Java 17.0.11 with PID 5720 (started by lukas in C:\Users\lukas\Documents\dev\projects\CrudJava\crudjavasebo)
+2024-05-25T00:26:27.068-03:00  INFO 5720 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2024-05-25T00:26:41.790-03:00  INFO 5720 --- [crudjavasebo] [main] b.c.m.c.CrudjavaseboApplicationTests     : Started CrudjavaseboApplicationTests in 16.027 seconds (process running for 20.203)
